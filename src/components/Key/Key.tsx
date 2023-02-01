@@ -1,11 +1,12 @@
 interface KeyProps {
-  number: string;
+  content: string;
+  className: string;
 }
 
-const Key = ({ number }: KeyProps): JSX.Element => {
+const Key = ({ content, className }: KeyProps): JSX.Element => {
   return (
     <li>
-      <button>{number}</button>
+      <button className={className}>{content}</button>
     </li>
   );
 };
