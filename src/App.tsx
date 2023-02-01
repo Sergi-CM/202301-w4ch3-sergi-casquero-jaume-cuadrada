@@ -1,5 +1,6 @@
 import "./App.css";
 import Action from "./components/Action/Action";
+import Actions from "./components/Actions/Actions";
 import Info from "./components/Info/Info";
 import Keyboard from "./components/Keyboard/Keyboard";
 
@@ -11,11 +12,7 @@ const App = (): JSX.Element => {
         <div className="keyboard-container">
           <Keyboard />
         </div>
-        <div className="actions">
-          <span className="number">667359961</span>
-          <Action href="call" className="call" text="Call" />
-          <Action href="hang-up" className="hang active" text="Hang Up" />
-        </div>
+        <Actions />
       </main>
     </div>
   );
