@@ -1,7 +1,10 @@
+import "./App.css";
+import Info from "./components/Info/Info";
+
 const App = (): JSX.Element => {
   return (
     <div className="container">
-      <span className="message">Calling...</span>
+      <Info message="Calling..." />
       <main className="phone">
         <div className="keyboard-container">
           <ol className="keyboard">
