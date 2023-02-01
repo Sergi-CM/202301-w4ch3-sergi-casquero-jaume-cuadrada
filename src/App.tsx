@@ -1,4 +1,5 @@
 import "./App.css";
+import Action from "./components/Action/Action";
 import Info from "./components/Info/Info";
 
 const App = (): JSX.Element => {
@@ -45,14 +46,8 @@ const App = (): JSX.Element => {
         </div>
         <div className="actions">
           <span className="number">667359961</span>
-
-          <a href="call" className="call">
-            Call
-          </a>
-
-          <a href="hang-up" className="hang active">
-            Hang up
-          </a>
+          <Action href="call" className="call" text="Call" />
+          <Action href="hang-up" className="hang active" text="Hang Up" />
         </div>
       </main>
     </div>
