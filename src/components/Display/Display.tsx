@@ -3,7 +3,11 @@ interface InfoDisplay {
 }
 
 const Display = ({ className }: InfoDisplay): JSX.Element => {
-  return <span className={className}>606334455</span>;
+  return (
+    <span data-testid="1" className={className}>
+      606334455
+    </span>
+  );
 };
 
 export default Display;
