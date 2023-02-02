@@ -20,28 +20,35 @@
 - Contains the function to clear the whole number
 - Contains the function to call
 - Contains the function to hang up
+- Contains the 'isCalling'
 
 ## APP
 
 ## INFO
 
-- Shows the 'is calling' status
+- Receives the 'is calling' status
+- Shows 'Calling..' when 'isCalling' is true
 
 ## DISPLAY
 
-- Shows the result of the 'add a number' function
-- Shows the result of the 'clear the number' function
+- Receives the phone number
+- Shows the phone number
 
 ## ACTIONS
 
-### ACTION
+- Receives the 'isCalling'
+- Shows one action button or the other depending on 'isCalling'
+
+## ACTION
 
 - One of the 'Action' components takes the function to call
 - One of the 'Action' components takes the function to hung up
 
 ## KEYBOARD
 
-### KEY
+- Receives the 'is calling'
 
-- Takes the function to add a number
-- Takes the function to clear the whole number
+## KEY
+
+- Receives the function to add a number
+- Receives the function to clear the whole number
